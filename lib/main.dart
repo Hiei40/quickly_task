@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'core/utils/routes/app_router.dart';
+import 'core/utils/routes/routes.dart';
 import 'feature/splash/model_view/view/splash.dart';
 
 void main() {
@@ -14,6 +16,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
+      initialRoute: Routes.splash,
+      onGenerateRoute: AppRouter.getRoute,
       home: Splash(),
     );
   }

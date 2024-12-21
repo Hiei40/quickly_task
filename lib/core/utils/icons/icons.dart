@@ -1,4 +1,4 @@
-class Icons
+class Iconsassets
 {
 
   static const String profile = 'assets/icons/Profile.png';
